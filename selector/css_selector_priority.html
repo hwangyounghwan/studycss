@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p {
+            color: blue;
+        }
+        p {
+            color :red ;
+        }
+    /* css selector의 경우 동급의 선택자의 경우 아래에 설정되어 있는 경우가 우선순위를 가진다   */
+        #text {
+            color: green !important;
+        }
+        .area p{
+            color: blue;
+        }
+        p {
+            color: red;
+        }
+    /* 이번의 경우에는 좀더 구체적으로 선택자를 지정하였기 때문에 우선순위를 가진다*/
+    /* 위든 아래던 좀더 자세하게 선택자를 정의하였을때 우선순위를 가진다 id > class > tag 그렇지만 인라인의 경우에는 좀더 큰 우선순위를 가진다 그래서 인라인을 쓰지말자 보니까 !important 이게 제일 강하네*/
+    </style>
+</head>
+<body>
+
+<div class="area">
+    <p id="text" style = "color:red">
+        대충 로렘 입섬 그거 있잖아요
+    </p>
+</div>
+
+</body>
+</html>
