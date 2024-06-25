@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            background: silver;
+            margin-bottom: 50px;
+        }  
+        /* float right가 되면서 한블록을 전부 사용했던것이 아닌 컨텐츠의 크기만큼 width가 생김 */
+        .thumb {
+            float: right;
+        }
+        .break {
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>float</h1>
+    <h2>float 특징</h2>
+    <div class="content">
+        <img src="http://placehold.it/100x100" alt="" class="thumb">
+        <p>
+            paragraph paragraph
+            paragraph<br class="break"/>
+            paragraph
+            paragraph
+            paragraphparagraphparagraphparagraphparagraphparagraphparagraphparagraphparagraphparagraph
+        </p>
+    </div>
+    <hr/>
+</body>
+</html>
