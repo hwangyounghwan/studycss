@@ -14,3 +14,6 @@ position absolute의 상태에서 -갑승ㄹ 주게 되면 밖으로 나가게 �
 
 ### relative
 포지션을 잡기전의 원래 자리가 기준으로 잡는다
+
+### fixed
+fixed는 무조건 화면을 기준으로 정의
