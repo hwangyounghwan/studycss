@@ -17,3 +17,18 @@ position absolute의 상태에서 -갑승ㄹ 주게 되면 밖으로 나가게 �
 
 ### fixed
 fixed는 무조건 화면을 기준으로 정의
+
+### absolute를 이용한 가운데 잡기
+p {
+    width: 500px;
+    height: 200px;
+    border: 2px solid red;
+    position: absolute:
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -100px
+}
+
+margin-left;
+margin-top; 이 두가지를 이용해서 원래 위치에서 땡겼다 밀었다 해보자
