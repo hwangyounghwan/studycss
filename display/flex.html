@@ -7,19 +7,18 @@
     <style>
         .wrap {
             display:flex;
-            flex-direction: column-reverse;
             width: 500px;
             height: 500px;
-            margin: 20px auto
+            flex-flow: row-reverse wrap;
         }
         .wrap div {
             width:100%;
-            height:50%
+            height:100%
         }
         .wrap div:first-child {
-            background-color: red;
+            background-color: red; width:50%
         }
-        .wrap div:nth-child(1) {
+        .wrap div:nth-child(2) {
             background-color: blue; width: 50%;
         }
         .wrap div:last-child {
@@ -30,9 +29,9 @@
 <body>
 
     <div class="wrap">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
     </div>
     
 </body>
