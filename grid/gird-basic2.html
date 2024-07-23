@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 40px 200px 40px;
+            grid-template-areas: 
+            ". h h h h h h h h h h ."
+            "m c c c c c c c c c c c"
+            ". f f f f f f f f f f .";
+        }
+        .header {
+            background-color: lightcoral;
+            grid-area: h;
+        }
+        .content {
+            background-color: lightgreen;
+            grid-area: m;
+        }
+        .menu {
+            background-color: lightblue;
+            grid-area: c;
+        }
+        .footer {
+            background-color: lightyellow;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="menu">MENU</div>
+        <div class="content">CONTENT</div>
+        <div class="footer">FOOTER</div>
+    </div>
+    
+</body>
+</html>
